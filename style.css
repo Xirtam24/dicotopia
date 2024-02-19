@@ -1,305 +1,339 @@
-/* root */
-:root {
-  --bs-body-font-family: "Inter";
-  --bs-link-color: black;
-  --bs-link-color-rgb: 0, 0, 0;
-  --bs-link-hover-color: orangered;
-  --bs-link-hover-color-rgb: 255, 69, 0;
-  /* --bs-navbar-color: rgba(80, 80, 80, 0.7); */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 @font-face {
-  font-family: NeueMachina;
-  src: url("font/NeueMachina-Regular.otf");
+    font-family: 'NeueBit-Bold';
+    src: local('NeueBit-Bold'), url(font/NeueBit-Bold.woff) format('woff');
+    }
+
+@font-face {
+        font-family: 'EditorialNew-Ultrabold';
+        src: local('EditorialNew-Ultrabold'), url(font/EditorialNew-Ultrabold.woff) format('woff');
+        }
+
+@font-face {
+        font-family: 'Mondwest-Bold';
+        src: local('Mondwest-Bold'), url(font/Mondwest-Bold.woff) format('woff');
+}       
+    
+@font-face {
+    font-family: 'NeueMontreal-Bold';
+    src: local('NeueMontreal-Bold'), url(font/NeueMontreal-Bold.woff) format('woff');
 }
+
+@font-face {
+    font-family: 'NeueMontreal-Regular';
+    src: local('NeueMontreal-Regular'), url(font/NeueMontreal-Regular.woff) format('woff');
+}         
 
 body {
-  background: whitesmoke;
+    background: #fff
 }
+
+/* riferimento per i calcoli dei rem, 16px = 1rem */
+html {
+    font-size: 16px;
+}
+
 
 /* navbar */
-.navbar-dark {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0));
+
+.nav {
+    
+    display: flex;
+    flex-direction: column;
+    position: block;
+    justify-content: space-between;
+    background-color: transparent ;
+    box-shadow: none;
+    z-index: 3; 
+    --bs-nav-link-padding-x: 1rem;
+    --bs-nav-link-padding-y: 0.2rem;
 }
 
-/* accent */
-span {
-  font-family: NeueMachina;
-  color: orangered;
+.nav-item{
+    display: flex;
+    margin: none;
 }
 
-/* hero */
-.hero {
-  display: flex;
-  align-items: end;
-  background: rgba(0, 0, 0, 0);
-  color: white;
-  margin-bottom: 3rem;
-  position: relative;
-  overflow: hidden;
-  min-height: 100vh;
+.nav-link {
+    display: flex;
+    font-family: 'NeueMontreal-Regular';
+    font-size: 1.125rem;
+    color:#3065af;
 }
 
-.video-bg {
-  position: absolute;
-  z-index: -1;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  min-width: 100%;
-  min-height: 100%;
-}
+ .color-size {
+    font-family: 'NeueMontreal-Bold';
+    font-size: 1.125rem;
+    color:#3065af;
+} 
 
-.arrowbtn-down {
-  position: absolute;
-  padding-left: calc(50vw - 1.5rem);
-  padding-bottom: 5vh;
-  font-size: 3rem;
-  color: rgb(255, 255, 255);
-}
 
-.arrowbtn-down:hover {
-  color: orangered;
-}
+/* Stili di testo */
 
-.hero-title {
-  padding-bottom: 30vh;
+h4 {
+    font-family: 'NeueMontreal-Regular' ;
+    font-size: 1.25rem;
+    color:#3065af;
 }
-
-.light-title {
-  font-family: Inter;
-  color: white;
-  font-weight: lighter;
-}
-
-/* hero-projects */
-.hero-project {
-  display: flex;
-  align-items: end;
-  background: rgba(0, 0, 0, 0.4);
-  color: white;
-  margin-bottom: 3rem;
-  position: relative;
-  overflow: hidden;
-  min-height: 60vh;
-}
-
-.img-overflow {
-  overflow: hidden;
-}
-
-.image-bg {
-  position: absolute;
-  z-index: -1;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  min-width: 100%;
-  min-height: 100%;
-}
-
-/* hero-about */
-.hero-about {
-  display: flex;
-  align-items: end;
-  background: rgba(0, 0, 0, 0.3);
-  color: white;
-  margin-bottom: 3rem;
-  position: relative;
-  overflow: hidden;
-  min-height: 100vh;
-}
-
-.video-bg-about {
-  position: absolute;
-  z-index: -1;
-  top: 35%;
-  left: 50%;
-  transform: translate(-50%, -35%);
-  min-width: 100%;
-  min-height: 100%;
-}
-
-/* footer */
-.footer {
-  background-color: black;
-  color: white;
-}
-
-.direct-link {
-  font-family: NeueMachina;
-  font-size: 32pt;
-}
-
-.contacts {
-  font-weight: 200;
-}
-
-.icd {
-  padding-top: 7rem;
-}
-
-/* projects gallery */
-.info-sw {
-  font-family: Inter;
-  font-weight: 500;
-}
-
-.img-fluid {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  min-width: 100%;
-  min-height: 100%;
-}
-
-/* arrows */
-.arrowbtn-sx {
-  float: left;
-  text-align: center;
-  line-height: 3rem;
-  text-decoration: none;
-  font-size: 2rem;
-}
-
-.arrowbtn-dx {
-  float: right;
-  text-align: center;
-  line-height: 3rem;
-  text-decoration: none;
-  font-size: 2rem;
-}
-
-.arrow-box {
-  justify-content: space-between;
-}
-
-/* link */
-.link a:link {
-  color: white;
-}
-
-.link a:hover {
-  color: orangered;
-}
-
-.link-block {
-  display: block;
-}
-
-a:link,
-a:visited,
-a:hover,
-a:active {
-  text-decoration: none;
-}
-
-/* text */
-h1 {
-  font-size: 3.5rem;
+.bold {
+    font-family: 'NeueMontreal-Bold';
 }
 
 h2 {
-  font-size: 3rem;
-}
+    font-family: 'NeueMontreal-Bold' ;
+    font-size: 2.1875rem;
+    color:#3065af;
 
-h3 {
-  font-size: 2rem;
-}
-
-h4 {
-  font-size: 1, 5rem;
 }
 
 h5 {
-  font-size: 1, 1rem;
+    font-family: 'NeueMontreal-Bold' ;
+    font-size: 2.1875rem;
+    color:#3065af;
+    margin-bottom: -1rem;
+
 }
 
-h6 {
-  font-size: 2rem;
+h3 {
+    font-family: 'NeueMontreal-Regular' ;
+    font-size: 1.5625rem;
+    color:#3065af;
+
 }
 
 p {
-  font-size: 1.25rem;
+    font-family: 'NeueMontreal-Regular' ;
+    font-size: 1rem;
+    color:#3065af;
 }
 
-/* about */
-.studies {
-  font-family: NeueMachina;
-  font-size: 6rem;
-  color: orangered;
+.numeri_bit {
+    font-family: 'NeueBit-Bold' ;
+    font-size: 3.5625rem;
+    color:#3065af;
+
 }
 
-.orange-subtitle {
-  font-family: Inter;
-  color: orangered;
+.numeri_neue {
+    font-family: 'NeueMontreal-Bold' ;
+    font-size: 2.5rem;
+    color:#3065af;
 }
 
-.study-des {
-  font-family: Inter;
-  font-weight: lighter;
-  color: black;
+.bit{
+    font-family: 'NeueBit-Bold' ;
+    font-size: 3.2rem;
+    color:#D10E32;
 }
+
+.bit-1{
+    font-family: 'NeueBit-Bold' ;
+    font-size: 3.2rem;
+    color:#3065af;
+
+}
+
+.lista{
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -1.5rem;
+}
+
+.sinistra {
+    text-align: right;
+}
+
+a{
+    text-decoration: none;
+    color:#3065af;
+}
+
+#contacts {
+    background-color: #3065af;
+    margin-top: 4rem;
+}
+
+.grigio {
+    font-family: 'NeueMontreal-Regular' ;
+    font-size: 1rem;
+    color:#b4c1d6;
+    opacity: 50%;
+    margin-top: 0.5rem;
+}
+
+.white {
+    font-family: 'NeueMontreal-Bold' ;
+    font-size: 2.1875rem;
+    color: white;
+    margin-top: 0.5rem;
+}
+
+.white_2{
+    font-family: 'NeueMontreal-Regular' ;
+    font-size: 1rem;
+    color: white;
+}
+.white_3{
+    font-family: 'NeueMontreal-Bold' ;
+    font-size: 1rem;
+    color: white;
+}
+.copy_2{
+    font-family: 'NeueMontreal-Regular' ;
+    font-size: 1rem;
+    color: white;
+    margin-top: 2.3rem;
+}
+
+/* barra che si muove */
+
+.marquee {
+    position: fixed;
+    overflow: hidden;
+    width: 100%;
+    --offset: 20vw;
+    --move-initial: calc(-25% + var(--offset));
+    --move-final: calc(-50% + var(--offset));
+    font-family:'EditorialNew-Ultrabold';
+    color: #fff;
+}
+
+.marquee__inner {
+    background-color: #3065af;
+    width: fit-content;
+    display: flex;
+    position: relative;
+    transform: translate3d(var(--move-initial), 0, 0);
+    animation: marquee 5s linear infinite;
+    animation-play-state: paused;
+}
+
+.marquee span {
+    font-size: 1rem;
+    padding: 0 1vw;
+    margin-bottom: 0.1rem;
+    margin-top: 0.25rem;
+}
+
+.marquee .marquee__inner {
+    animation-play-state: running;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translate3d(var(--move-initial), 0, 0);
+    }
+
+    100% {
+        transform: translate3d(var(--move-final), 0, 0);
+    }
+}
+
+
+/* immagine */
+
+
+
+
+
+/* linea footer */
+.linea {
+    border-top: 2px solid #3065af; /* Spessore e colore della linea */
+    margin-top: 2rem;
+    margin-bottom: 2rem; 
+}
+
+
 
 /* media query (text) */
 @media (min-width: 376px) {
-  h1 {
-    font-size: clamp(3.5rem, 5vw + 1rem, 8rem);
-  }
+ .numeri_bit {
+ font-size: clamp(3.5625rem, 5vw + 1rem, 12.5rem);
+ }
 
-  h2 {
-    font-size: clamp(3rem, 5vw + 1rem, 6rem);
-  }
-
-  h3 {
-    font-size: clamp(2rem, 5vw + 1rem, 2.5rem);
-  }
-
-  h4 {
-    font-size: clamp(1, 5rem, 5vw + 1rem, 2rem);
-  }
-
-  h5 {
-    font-size: clamp(1, 1rem, 5vw + 1rem, 1.5rem);
-  }
-
-  h6 {
-    font-size: clamp(2rem, 5vw + 1rem, 4rem);
-  }
-
-  p {
-    font-size: clamp(1.25rem, 5vw + 1rem, 2rem);
-  }
 }
-
-@media (max-width: 768px) {
-  .margin-mobile {
-    margin-bottom: 0.5rem;
-  }
-}
-/* riferimento per i calcoli dei rem, 16px = 1rem */
-html {
-  font-size: 16px;
-}
-
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-}
+@media (min-width: 576px) { }
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-}
+@media (min-width: 768px) { }
+
+@media (max-width: 768px) { }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  /* riferimento per i calcoli dei rem, 18px = 1rem */
-}
+@media (min-width: 992px) { }
 
 /* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
+@media (min-width: 1200px) {     
+
+/* testo centrale */
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
 }
 
-/* XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {
+.copy{
+    position: absolute;
+    top: 97%;
+    left: 10rem;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
 }
+
+/* navbar */
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    justify-content: space-between;
+    background-color: transparent ;
+    box-shadow: none;
+    z-index: 3;
+    font-size: 1.3rem;
+}
+
+.nav-link-get{
+        display: flex;
+        margin-top: 8px;
+        margin-left: 45.5rem;
+}
+
+.nav-link{
+        margin-left: 3.5rem;
+    }
+
+
+   /* Stili di testo */ 
+
+
+   h4 {
+    font-family: 'NeueMontreal-Regular' ;
+    font-size: 3.75rem;
+    color:#3065af;
+    margin-top: 1.5rem;
+}
+.bold {
+    font-family: 'NeueMontreal-Bold';
+}
+
+
+}
+
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { }
+
