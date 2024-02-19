@@ -72,15 +72,81 @@ html {
     color:#3065af;
 } 
 
+ /* lista bias */
+
+.bias{
+    
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    justify-content: space-between;
+    background-color: transparent ;
+    box-shadow: none;
+    z-index: 3; 
+    --bs-nav-link-padding-x: 1rem;
+    --bs-nav-link-padding-y: 0.2rem;
+}
+
+.bias-item{
+    display: flex;
+    margin: none;
+}
+
+.bias-link {
+    display: flex;
+    font-family: 'Mondwest-Bold';
+    font-size: 1.21rem;
+    color:#D10E32;
+}
+
+ol, ul {
+    padding-left: 0; 
+}
+
+.cognitivi{
+    
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    justify-content: space-between;
+    background-color: transparent ;
+    box-shadow: none;
+    z-index: 3; 
+    --bs-nav-link-padding-x: 1rem;
+    --bs-nav-link-padding-y: 0.2rem;
+    margin-top: -1rem;
+}
+
+.cognitivi-item{
+    display: flex;
+    margin: none;
+}
+
+.cognitivi-link {
+    display: flex;
+    font-family: 'Mondwest-Bold';
+    font-size: 1.21rem;
+    color:#D10E32;
+}
+
 
 /* Stili di testo */
 
 h4 {
     font-family: 'NeueMontreal-Regular' ;
-    font-size: 1.25rem;
+    font-size: 1rem;
     color:#3065af;
 }
 .bold {
+    background-color: #3065af;
+    font-family: 'NeueMontreal-Bold';
+    color: #fff;
+}
+.bold_1 {
+    font-family: 'NeueMontreal-Bold';
+}
+
+.bold_2 {
     font-family: 'NeueMontreal-Bold';
 }
 
@@ -106,11 +172,13 @@ h3 {
 
 }
 
+
 p {
     font-family: 'NeueMontreal-Regular' ;
     font-size: 1rem;
     color:#3065af;
 }
+
 
 .numeri_bit {
     font-family: 'NeueBit-Bold' ;
@@ -126,8 +194,8 @@ p {
 }
 
 .bit{
-    font-family: 'NeueBit-Bold' ;
-    font-size: 3.2rem;
+    font-family: 'Mondwest-Bold' ;
+    font-size: 2.6rem;
     color:#D10E32;
 }
 
@@ -144,6 +212,10 @@ p {
     display: flex;
     flex-wrap: wrap;
     margin-top: -1.5rem;
+}
+
+.lista_2 {
+    text-align: right;
 }
 
 .sinistra {
@@ -189,15 +261,15 @@ a{
     font-family: 'NeueMontreal-Regular' ;
     font-size: 1rem;
     color: white;
-    margin-top: 2.3rem;
+    margin-top: 0.3rem;
+    margin-bottom: 1rem;
 }
 
 /* barra che si muove */
 
 .marquee {
     position: fixed;
-    overflow: hidden;
-    width: 100%;
+    top:40rem;
     --offset: 20vw;
     --move-initial: calc(-25% + var(--offset));
     --move-final: calc(-50% + var(--offset));
@@ -303,37 +375,297 @@ a{
     background-color: transparent ;
     box-shadow: none;
     z-index: 3;
-    font-size: 1.3rem;
-}
-
-.nav-link-get{
-        display: flex;
-        margin-top: 8px;
-        margin-left: 45.5rem;
+    font-size: 2rem;
+    margin-left: -10.5rem;
 }
 
 .nav-link{
-        margin-left: 3.5rem;
+        margin-left: 10.8rem;
     }
 
+.nav-link {
+        display: flex;
+        font-family: 'NeueMontreal-Regular';
+        font-size: 2rem;
+        color: #3065af;
+    }
+
+    .color-size {
+        font-family: 'NeueMontreal-Bold';
+        font-size: 2rem;
+        color:#3065af;
+    } 
+
+    /* lista bias */
+
+    .bias{
+    
+        display: flex;
+        position: fixed;
+        top:5rem;
+        flex-direction: column;
+        text-decoration: none;
+        justify-content: space-between;
+        background-color: transparent ;
+        box-shadow: none;
+        z-index: 3; 
+        --bs-nav-link-padding-x: 1rem;
+        --bs-nav-link-padding-y: 0.2rem;
+    }
+    
+    .bias-item{
+        display: flex;
+        margin-top:3rem;
+    }
+    
+    .bias-link {
+        display: flex;
+        font-family: 'Mondwest-Bold';
+        font-size: 2.27rem;
+        color:#D10E32;
+    }
+    
+    ol, ul {
+        padding-left: 0; 
+    }
+
+    .py-lg-5 {
+        padding-top: 2rem!important;
+        padding-bottom: 0rem!important;
+    }
+
+    .cognitivi{
+    
+        display: flex;
+        position: fixed;
+        top:30rem;
+        flex-direction: column;
+        text-decoration: none;
+        justify-content: space-between;
+        background-color: transparent ;
+        box-shadow: none;
+        z-index: 3; 
+        --bs-nav-link-padding-x: 1rem;
+        --bs-nav-link-padding-y: 0.2rem;
+    }
+    
+    .cognitivi-item{
+        display: flex;
+        margin-top:3rem;
+        padding-top: -1.5rem;
+    }
+    
+    .cognitivi-link {
+        display: flex;
+        font-family: 'Mondwest-Bold';
+        font-size: 2.27rem;
+        color:#D10E32;
+    }
 
    /* Stili di testo */ 
 
+h3 {
+    font-family: 'NeueMontreal-Regular' ;
+    font-size: 1.875rem;
+    color:#3065af;
 
+}
+h2 {
+    font-family: 'NeueMontreal-Bold' ;
+    font-size: 3.125rem;
+    color:#3065af;
+
+}
    h4 {
     font-family: 'NeueMontreal-Regular' ;
-    font-size: 3.75rem;
+    font-size: 3rem;
     color:#3065af;
-    margin-top: 1.5rem;
-}
-.bold {
-    font-family: 'NeueMontreal-Bold';
+    margin-top: 5rem;
 }
 
+h5 {
+    font-family: 'NeueMontreal-Bold' ;
+    font-size: 3.125rem;
+    color:#3065af;
+    margin-bottom: -1rem;
+
+}
+
+
+
+.bit-2{
+    font-family: 'Mondwest-Bold';
+    font-size: 3.81rem;
+    color:#D10E32;
+}
+.bit{
+    font-family: 'Mondwest-Bold';
+    font-size: 3.81rem;
+    color:#D10E32;
+}
+
+.bit-1{
+    font-family: 'NeueBit-Bold' ;
+    font-size: 4.35rem;
+    color:#3065af;
+
+}
+
+.bold {
+    background-color: #3065af;
+    font-family: 'NeueMontreal-Bold';
+    color: #fff;
+}
+.bold_1 {
+    font-family: 'NeueMontreal-Bold';
+}
+p {
+    font-family: 'NeueMontreal-Regular' ;
+    font-size: 2rem;
+    color:#3065af;
+}
+
+.numeri_bit {
+    font-family: 'NeueBit-Bold' ;
+    font-size: 12.5rem;
+    color:#3065af;
+
+}
+
+.numeri_neue {
+    font-family: 'NeueMontreal-Bold' ;
+    font-size: 8.75rem;
+    color:#3065af;
+}
+
+.lista{
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -5.5rem;
+}
+.lista_2 {
+    text-align: right;
+}
+
+.grigio {
+    font-family: 'NeueMontreal-Regular' ;
+    font-size: 1.5rem;
+    color:#b4c1d6;
+    opacity: 50%;
+    margin-top: 0.5rem;
+}
+
+.white {
+    font-family: 'NeueMontreal-Bold' ;
+    font-size: 2.5rem;
+    color: white;
+    margin-top: 0.5rem;
+}
+
+.white_2{
+    font-family: 'NeueMontreal-Regular' ;
+    font-size: 1.3rem;
+    color: white;
+}
+.white_3{
+    font-family: 'NeueMontreal-Bold' ;
+    font-size: 1.5rem;
+    color: white;
+}
+.copy_2{
+    font-family: 'NeueMontreal-Regular' ;
+    font-size: 1.2rem;
+    color: white;
+    margin-top: 0.3rem;
+    margin-bottom: 1.5rem;
+}
+
+.px-lg-5 {
+    padding-right: 11rem!important;
+    padding-left: 11rem!important;
+}
+.py-lg-5 {
+    padding-top: 4rem!important;
+    padding-bottom: 0rem!important;
+}
+
+/* barra che si muove */
+
+.marquee {
+    position: fixed;
+    top: 53.5rem;
+    width: 100%;
+    --offset: 20vw;
+    --move-initial: calc(-25% + var(--offset));
+    --move-final: calc(-50% + var(--offset));
+    font-family:'EditorialNew-Ultrabold';
+    color: #fff;
+}
+
+.marquee__inner {
+    background-color: #3065af;
+    width: fit-content;
+    display: flex;
+    position: relative;
+    transform: translate3d(var(--move-initial), 0, 0);
+    animation: marquee 5s linear infinite;
+    animation-play-state: paused;
+}
+
+.marquee span {
+    font-size: 1.7rem;
+    padding: 0 1vw;
+    margin-bottom: 0.1rem;
+    margin-top: 0.25rem;
+}
+
+.marquee .marquee__inner {
+    animation-play-state: running;
+}
 
 }
 
 
 /* XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) { }
+@media (min-width: 1400px) { 
+    .nav {
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        justify-content: space-between;
+        background-color: #fff;
+        box-shadow: none;
+        z-index: 3;
+        font-size: 2rem;
+        margin-left: -10.5rem;
+    }
+    
+    .nav-link{
+            margin-left: 13.8rem;
+        }
+    
+    .nav-link {
+            display: flex;
+            font-family: 'NeueMontreal-Regular';
+            font-size: 2rem;
+            color: #3065af;
+        }
+
+        h4 {
+            font-family: 'NeueMontreal-Regular' ;
+            font-size: 3.75rem;
+            color:#3065af;
+            margin-top: 5rem;
+        }
+
+        .color-size {
+            font-family: 'NeueMontreal-Bold';
+            font-size: 2rem;
+            color:#3065af;
+        } 
+
+
+}
 
