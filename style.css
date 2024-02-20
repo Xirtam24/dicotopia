@@ -413,27 +413,24 @@ a{
 
 /* navbar */
 
-.nav {
-    display: flex;
-    flex-direction: row;
-    position: fixed;
-    justify-content: space-between;
-    background-color: transparent ;
-    box-shadow: none;
-    z-index: 3;
-    font-size: 2rem;
-    margin-left: -10.5rem;
-}
-
-.nav-link{
-        margin-left: 10.8rem;
+    .nav {
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        justify-content: space-between;
+       background-color: #fff;
+        box-shadow: none;
+        z-index: 3;
+        font-size: 2rem;
     }
 
-.nav-link {
+    .nav-link {
         display: flex;
         font-family: 'NeueMontreal-Regular';
         font-size: 2rem;
         color: #3065af;
+        padding-left: 74px;
+        padding-right: 82px;
     }
 
     .color-size {
@@ -441,7 +438,16 @@ a{
         font-size: 2rem;
         color:#3065af;
     } 
-
+    .color-size-1 {
+        font-family: 'NeueMontreal-Bold';
+        font-size: 2rem;
+        color:#fff;
+    } 
+    .nav_blu {
+        background-color: #3065af;
+}
+    
+    
     /* lista bias */
 
     .bias{
@@ -538,10 +544,12 @@ h5 {
     font-size: 3.125rem;
     color:#3065af;
     margin-bottom: -1rem;
-
+    transition: all 0.2 linear;
 }
 
-
+h5:hover{
+    color: #D10E32;
+}
 
 .bit-2{
     font-family: 'Mondwest-Bold';
@@ -552,6 +560,11 @@ h5 {
     font-family: 'Mondwest-Bold';
     font-size: 3.81rem;
     color:#D10E32;
+    transition: all 0.2 linear;
+}
+
+.bit:hover{
+    color: #3065af;
 }
 
 .bit-1{
@@ -577,14 +590,14 @@ p {
 
 .numeri_bit {
     font-family: 'NeueBit-Bold' ;
-    font-size: 12.5rem;
+    font-size: 10.6rem;
     color:#3065af;
 
 }
 
 .numeri_neue {
     font-family: 'NeueMontreal-Bold' ;
-    font-size: 8.75rem;
+    font-size: 7.5rem;
     color:#3065af;
 }
 
@@ -636,6 +649,7 @@ p {
     padding-right: 11rem!important;
     padding-left: 11rem!important;
 }
+
 .py-lg-5 {
     padding-top: 4rem!important;
     padding-bottom: 0rem!important;
@@ -684,28 +698,6 @@ p {
 
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) { 
-    .nav {
-        display: flex;
-        flex-direction: row;
-        position: fixed;
-        justify-content: space-between;
-        background-color: #fff;
-        box-shadow: none;
-        z-index: 3;
-        font-size: 2rem;
-        margin-left: -10.5rem;
-    }
-    
-    .nav-link{
-            margin-left: 13.8rem;
-        }
-    
-    .nav-link {
-            display: flex;
-            font-family: 'NeueMontreal-Regular';
-            font-size: 2rem;
-            color: #3065af;
-        }
 
         h4 {
             font-family: 'NeueMontreal-Regular' ;
@@ -720,6 +712,9 @@ p {
             color:#3065af;
         } 
 
+        .padding_right{
+            padding-right: 6.1rem;
+        }
+
 
 }
-
