@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -7,18 +7,18 @@
 @font-face {
     font-family: 'NeueBit-Bold';
     src: local('NeueBit-Bold'), url(font/NeueBit-Bold.woff) format('woff');
-    }
+}
 
 @font-face {
-        font-family: 'EditorialNew-Ultrabold';
-        src: local('EditorialNew-Ultrabold'), url(font/EditorialNew-Ultrabold.woff) format('woff');
-        }
+    font-family: 'EditorialNew-Ultrabold';
+    src: local('EditorialNew-Ultrabold'), url(font/EditorialNew-Ultrabold.woff) format('woff');
+}
 
 @font-face {
-        font-family: 'Mondwest-Bold';
-        src: local('Mondwest-Bold'), url(font/Mondwest-Bold.woff) format('woff');
-}       
-    
+    font-family: 'Mondwest-Bold';
+    src: local('Mondwest-Bold'), url(font/Mondwest-Bold.woff) format('woff');
+}
+
 @font-face {
     font-family: 'NeueMontreal-Bold';
     src: local('NeueMontreal-Bold'), url(font/NeueMontreal-Bold.woff) format('woff');
@@ -27,7 +27,7 @@
 @font-face {
     font-family: 'NeueMontreal-Regular';
     src: local('NeueMontreal-Regular'), url(font/NeueMontreal-Regular.woff) format('woff');
-}         
+}
 
 body {
     background: #fff
@@ -42,19 +42,19 @@ html {
 /* navbar */
 
 .nav {
-    
+
     display: flex;
     flex-direction: column;
     position: block;
     justify-content: space-between;
-    background-color: transparent ;
+    background-color: transparent;
     box-shadow: none;
-    z-index: 3; 
+    z-index: 3;
     --bs-nav-link-padding-x: 1rem;
     --bs-nav-link-padding-y: 0.2rem;
 }
 
-.nav-item{
+.nav-item {
     display: flex;
     margin: none;
 }
@@ -63,31 +63,31 @@ html {
     display: flex;
     font-family: 'NeueMontreal-Regular';
     font-size: 1.125rem;
-    color:#3065af;
+    color: #3065af;
 }
 
- .color-size {
+.color-size {
     font-family: 'NeueMontreal-Bold';
     font-size: 1.125rem;
-    color:#3065af;
-} 
+    color: #3065af;
+}
 
- /* lista bias */
+/* lista bias */
 
-.bias{
-    
+.bias {
+
     display: flex;
     flex-direction: row;
     text-decoration: none;
     justify-content: space-between;
-    background-color: transparent ;
+    background-color: transparent;
     box-shadow: none;
-    z-index: 3; 
+    z-index: 3;
     --bs-nav-link-padding-x: 1rem;
     --bs-nav-link-padding-y: 0.2rem;
 }
 
-.bias-item{
+.bias-item {
     display: flex;
     margin: none;
 }
@@ -96,28 +96,29 @@ html {
     display: flex;
     font-family: 'Mondwest-Bold';
     font-size: 1.21rem;
-    color:#3065af;
+    color: #3065af;
 }
 
-ol, ul {
-    padding-left: 0; 
+ol,
+ul {
+    padding-left: 0;
 }
 
-.cognitivi{
-    
+.cognitivi {
+
     display: flex;
     flex-direction: row;
     text-decoration: none;
     justify-content: space-between;
-    background-color: transparent ;
+    background-color: transparent;
     box-shadow: none;
-    z-index: 3; 
+    z-index: 3;
     --bs-nav-link-padding-x: 1rem;
     --bs-nav-link-padding-y: 0.2rem;
     margin-top: -1rem;
 }
 
-.cognitivi-item{
+.cognitivi-item {
     display: flex;
     margin: none;
 }
@@ -126,25 +127,27 @@ ol, ul {
     display: flex;
     font-family: 'Mondwest-Bold';
     font-size: 1.21rem;
-    color:#3065af;
+    color: #3065af;
 }
 
-.red{
+.red {
     color: #D10E32;
 }
 
 /* Stili di testo */
 
 h4 {
-    font-family: 'NeueMontreal-Regular' ;
+    font-family: 'NeueMontreal-Regular';
     font-size: 1rem;
-    color:#3065af;
+    color: #3065af;
 }
+
 .bold {
     background-color: #3065af;
     font-family: 'NeueMontreal-Bold';
     color: #fff;
 }
+
 .bold_1 {
     font-family: 'NeueMontreal-Bold';
 }
@@ -154,62 +157,62 @@ h4 {
 }
 
 h2 {
-    font-family: 'NeueMontreal-Bold' ;
+    font-family: 'NeueMontreal-Bold';
     font-size: 2.1875rem;
-    color:#3065af;
+    color: #3065af;
 
 }
 
 h5 {
-    font-family: 'NeueMontreal-Bold' ;
+    font-family: 'NeueMontreal-Bold';
     font-size: 2.1875rem;
-    color:#3065af;
+    color: #3065af;
     margin-bottom: -1rem;
 
 }
 
 h3 {
-    font-family: 'NeueMontreal-Regular' ;
+    font-family: 'NeueMontreal-Regular';
     font-size: 1.5625rem;
-    color:#3065af;
+    color: #3065af;
 
 }
 
 
 p {
-    font-family: 'NeueMontreal-Regular' ;
+    font-family: 'NeueMontreal-Regular';
     font-size: 1rem;
-    color:#3065af;
+    color: #3065af;
 }
 
 
 .numeri_bit {
-    font-family: 'NeueBit-Bold' ;
+    font-family: 'NeueBit-Bold';
     font-size: 3.5625rem;
-    color:#3065af;
+    color: #3065af;
 
 }
 
 .numeri_neue {
-    font-family: 'NeueMontreal-Bold' ;
+    font-family: 'NeueMontreal-Bold';
     font-size: 2.5rem;
-    color:#3065af;
+    color: #3065af;
 }
 
-.bit{
-    font-family: 'Mondwest-Bold' ;
+.bit {
+    font-family: 'Mondwest-Bold';
     font-size: 2.6rem;
-    color:#D10E32;
+    color: #D10E32;
 }
 
-.bit-1{
-    font-family: 'NeueBit-Bold' ;
+.bit-1 {
+    font-family: 'NeueBit-Bold';
     font-size: 3.2rem;
-    color:#3065af;
+    color: #3065af;
 
 }
 
-.lista{
+.lista {
     --bs-gutter-x: 1.5rem;
     --bs-gutter-y: 0;
     display: flex;
@@ -226,9 +229,9 @@ p {
     text-align: right;
 }
 
-a{
+a {
     text-decoration: none;
-    color:#3065af;
+    color: #3065af;
 }
 
 #contacts {
@@ -237,27 +240,28 @@ a{
 }
 
 .grigio {
-    font-family: 'NeueMontreal-Regular' ;
+    font-family: 'NeueMontreal-Regular';
     font-size: 1rem;
-    color:#b4c1d6;
+    color: #b4c1d6;
     opacity: 50%;
     margin-top: 0.5rem;
 }
 
 .white {
-    font-family: 'NeueMontreal-Bold' ;
+    font-family: 'NeueMontreal-Bold';
     font-size: 2.1875rem;
     color: white;
     margin-top: 0.5rem;
 }
 
-.white_2{
-    font-family: 'NeueMontreal-Regular' ;
+.white_2 {
+    font-family: 'NeueMontreal-Regular';
     font-size: 1rem;
     color: white;
 }
-.white_3{
-    font-family: 'NeueMontreal-Bold' ;
+
+.white_3 {
+    font-family: 'NeueMontreal-Bold';
     font-size: 1rem;
     color: white;
 }
@@ -269,28 +273,29 @@ a{
 }
 
 .blu {
-    font-family: 'NeueMontreal-Regular' ;
+    font-family: 'NeueMontreal-Regular';
     font-size: 1rem;
-    color:#3065af;
+    color: #3065af;
     opacity: 50%;
     margin-top: 0.5rem;
 }
 
 .blu_1 {
-    font-family: 'NeueMontreal-Bold' ;
+    font-family: 'NeueMontreal-Bold';
     font-size: 2.1875rem;
     color: #3065af;
     margin-top: 0.5rem;
 }
 
-.blu_2{
-    font-family: 'NeueMontreal-Regular' ;
+.blu_2 {
+    font-family: 'NeueMontreal-Regular';
     color: #3065af;
     font-size: 1rem;
     color: 3065af;
 }
-.blu_3{
-    font-family: 'NeueMontreal-Bold' ;
+
+.blu_3 {
+    font-family: 'NeueMontreal-Bold';
     font-size: 1rem;
     color: #3065af;
 }
@@ -298,8 +303,8 @@ a{
 
 
 
-.copy_2{
-    font-family: 'NeueMontreal-Regular' ;
+.copy_2 {
+    font-family: 'NeueMontreal-Regular';
     font-size: 1rem;
     color: white;
     margin-top: 0.3rem;
@@ -314,7 +319,7 @@ a{
     --offset: 20vw;
     --move-initial: calc(-25% + var(--offset));
     --move-final: calc(-50% + var(--offset));
-    font-family:'EditorialNew-Ultrabold';
+    font-family: 'EditorialNew-Ultrabold';
     color: #fff;
 }
 
@@ -352,67 +357,69 @@ a{
 
 /* sfondo blu */
 
-.white_4{
+.white_4 {
     color: #fff;
 }
 
- #progetto{
+#progetto {
     background-color: #3065af;
-} 
+}
 
 
 
 /* linea footer */
 .linea {
-    border-top: 2px solid #3065af; /* Spessore e colore della linea */
+    border-top: 2px solid #3065af;
+    /* Spessore e colore della linea */
     margin-top: 2rem;
-    margin-bottom: 2rem; 
+    margin-bottom: 2rem;
 }
 
 
 
 /* media query (text) */
 @media (min-width: 376px) {
- .numeri_bit {
- font-size: clamp(3.5625rem, 5vw + 1rem, 12.5rem);
- }
+    .numeri_bit {
+        font-size: clamp(3.5625rem, 5vw + 1rem, 12.5rem);
+    }
 
 }
+
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) { }
+@media (min-width: 576px) {}
 
 /* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { }
+@media (min-width: 768px) {}
 
-@media (max-width: 768px) { }
+@media (max-width: 768px) {}
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { }
+@media (min-width: 992px) {}
 
 /* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {     
+@media (min-width: 1200px) {
 
-/* testo centrale */
+    /* testo centrale */
 
-.content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    text-align: center;
-}
+    .content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        text-align: center;
+    }
 
-.copy{
-    position: absolute;
-    top: 97%;
-    left: 10rem;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    text-align: center;
-}
+    .copy {
+        position: absolute;
+        top: 97%;
+        left: 10rem;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        text-align: center;
+    }
 
-/* navbar */
+    /* navbar */
 
     .nav {
         display: flex;
@@ -435,293 +442,333 @@ a{
         transition: all .15s ease-in-out;
     }
 
-    .nav-link:hover{
+    .nav-link:hover {
         color: #D10E32;
     }
 
     .color-size {
         font-family: 'NeueMontreal-Bold';
         font-size: 2rem;
-        color:#3065af;
-    } 
+        color: #3065af;
+    }
+
     .color-size-1 {
         font-family: 'NeueMontreal-Bold';
         font-size: 2rem;
-        color:#fff;
-    } 
+        color: #fff;
+    }
+
     .nav_blu {
         background-color: #3065af;
-}
-    
-    
+    }
+
+
     /* lista bias */
 
-    .bias{
-    
+    .bias {
+
         display: flex;
         position: fixed;
-        top:5rem;
+        top: 5rem;
         flex-direction: column;
         text-decoration: none;
         justify-content: space-between;
-        background-color: transparent ;
+        background-color: transparent;
         box-shadow: none;
-        z-index: 3; 
+        z-index: 3;
         --bs-nav-link-padding-x: 1rem;
         --bs-nav-link-padding-y: 0.2rem;
     }
-    
-    .bias-item{
+
+    .bias-item {
         display: flex;
-        margin-top:3rem;
+        margin-top: 3rem;
     }
-    
+
     .bias-link {
         display: flex;
         font-family: 'Mondwest-Bold';
         font-size: 2.27rem;
-        color:#3065af;
+        color: #3065af;
     }
-    
-    ol, ul {
-        padding-left: 0; 
+
+    ol,
+    ul {
+        padding-left: 0;
     }
 
     .py-lg-5 {
-        padding-top: 2rem!important;
-        padding-bottom: 0rem!important;
+        padding-top: 2rem !important;
+        padding-bottom: 0rem !important;
     }
 
-    .cognitivi{
-    
+    .cognitivi {
+
         display: flex;
         position: fixed;
-        top:31rem;
+        top: 31rem;
         flex-direction: column;
         text-decoration: none;
         justify-content: space-between;
-        background-color: transparent ;
+        background-color: transparent;
         box-shadow: none;
-        z-index: 3; 
+        z-index: 3;
         --bs-nav-link-padding-x: 1rem;
         --bs-nav-link-padding-y: 0.2rem;
     }
-    
-    .cognitivi-item{
+
+    .cognitivi-item {
         display: flex;
-        margin-top:3rem;
+        margin-top: 3rem;
         padding-top: -1.5rem;
     }
-    
+
     .cognitivi-link {
         display: flex;
         font-family: 'Mondwest-Bold';
         font-size: 2.27rem;
-        color:#3065af;
+        color: #3065af;
     }
 
-    .red{
+    .red {
         color: #D10E32;
     }
 
-   /* Stili di testo */ 
+    /* Stili di testo */
 
-h3 {
-    font-family: 'NeueMontreal-Regular' ;
-    font-size: 1.875rem;
-    color:#3065af;
+    h3 {
+        font-family: 'NeueMontreal-Regular';
+        font-size: 1.875rem;
+        color: #3065af;
 
-}
-h2 {
-    font-family: 'NeueMontreal-Bold' ;
-    font-size: 3.125rem;
-    color:#3065af;
+    }
 
-}
-   h4 {
-    font-family: 'NeueMontreal-Regular' ;
-    font-size: 3rem;
-    color:#3065af;
-    margin-top: 5rem;
-}
+    h2 {
+        font-family: 'NeueMontreal-Bold';
+        font-size: 3.125rem;
+        color: #3065af;
 
-h5 {
-    font-family: 'NeueMontreal-Bold' ;
-    font-size: 3.125rem;
-    color:#3065af;
-    margin-bottom: -1rem;
-    transition: all 0.2 linear;
-}
+    }
 
-h5:hover{
-    color: #D10E32;
-}
+    h4 {
+        font-family: 'NeueMontreal-Regular';
+        font-size: 3rem;
+        color: #3065af;
+        margin-top: 5rem;
+    }
 
-.bit-2{
-    font-family: 'Mondwest-Bold';
-    font-size: 3.81rem;
-    color:#D10E32;
-}
-.bit{
-    font-family: 'Mondwest-Bold';
-    font-size: 3.81rem;
-    color:#D10E32;
-    transition: all 0.2 linear;
-}
+    h5 {
+        font-family: 'NeueMontreal-Bold';
+        font-size: 3.125rem;
+        color: #3065af;
+        margin-bottom: -1rem;
+        transition: all 0.2 linear;
+    }
 
-.bit:hover{
-    color: #3065af;
-}
+    h5:hover {
+        color: #D10E32;
+    }
 
-.bit-1{
-    font-family: 'NeueBit-Bold' ;
-    font-size: 4.35rem;
-    color:#3065af;
+    .bit-2 {
+        font-family: 'Mondwest-Bold';
+        font-size: 3.81rem;
+        color: #D10E32;
+    }
 
-}
+    .bit {
+        font-family: 'Mondwest-Bold';
+        font-size: 3.81rem;
+        color: #D10E32;
+        transition: all 0.2 linear;
+    }
 
-.bold {
-    background-color: #3065af;
-    font-family: 'NeueMontreal-Bold';
-    color: #fff;
-}
-.bold_1 {
-    font-family: 'NeueMontreal-Bold';
-}
-p {
-    font-family: 'NeueMontreal-Regular' ;
-    font-size: 2rem;
-    color:#3065af;
-}
+    .bit:hover {
+        color: #3065af;
+    }
 
-.numeri_bit {
-    font-family: 'NeueBit-Bold' ;
-    font-size: 10.6rem;
-    color:#3065af;
+    .bit-1 {
+        font-family: 'NeueBit-Bold';
+        font-size: 4.35rem;
+        color: #3065af;
 
-}
+    }
 
-.numeri_neue {
-    font-family: 'NeueMontreal-Bold' ;
-    font-size: 7.5rem;
-    color:#3065af;
-}
+    .bold {
+        background-color: #3065af;
+        font-family: 'NeueMontreal-Bold';
+        color: #fff;
+    }
 
-.lista{
-    --bs-gutter-x: 1.5rem;
-    --bs-gutter-y: 0;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: -5.5rem;
-    align-items: baseline;
-}
-.lista_2 {
-    text-align: right;
-}
+    .bold_1 {
+        font-family: 'NeueMontreal-Bold';
+    }
 
-.grigio {
-    font-family: 'NeueMontreal-Regular' ;
-    font-size: 1.5rem;
-    color:#b4c1d6;
-    opacity: 50%;
-    margin-top: 0.5rem;
-}
+    p {
+        font-family: 'NeueMontreal-Regular';
+        font-size: 2rem;
+        color: #3065af;
+    }
 
-.white {
-    font-family: 'NeueMontreal-Bold' ;
-    font-size: 2.5rem;
-    color: white;
-    margin-top: 0.5rem;
-}
+    .numeri_bit {
+        font-family: 'NeueBit-Bold';
+        font-size: 10.6rem;
+        color: #3065af;
 
-.white_2{
-    font-family: 'NeueMontreal-Regular' ;
-    font-size: 1.3rem;
-    color: white;
-}
-.white_3{
-    font-family: 'NeueMontreal-Bold' ;
-    font-size: 1.5rem;
-    color: white;
-}
-.copy_2{
-    font-family: 'NeueMontreal-Regular' ;
-    font-size: 1.2rem;
-    color: white;
-    margin-top: 0.3rem;
-    margin-bottom: 1.5rem;
-}
+    }
 
-.px-lg-5 {
-    padding-right: 11rem!important;
-    padding-left: 11rem!important;
-}
+    .numeri_neue {
+        font-family: 'NeueMontreal-Bold';
+        font-size: 7.5rem;
+        color: #3065af;
+    }
 
-.py-lg-5 {
-    padding-top: 4rem!important;
-    padding-bottom: 0rem!important;
-}
+    .lista {
+        --bs-gutter-x: 1.5rem;
+        --bs-gutter-y: 0;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: -5.5rem;
+        align-items: baseline;
+    }
 
-/* barra che si muove */
+    .lista_2 {
+        text-align: right;
+    }
 
-.marquee {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    --offset: 20vw;
-    --move-initial: calc(-25% + var(--offset));
-    --move-final: calc(-50% + var(--offset));
-    font-family:'EditorialNew-Ultrabold';
-    color: #fff;
-}
+    .grigio {
+        font-family: 'NeueMontreal-Regular';
+        font-size: 1.5rem;
+        color: #b4c1d6;
+        opacity: 50%;
+        margin-top: 0.5rem;
+    }
 
-.marquee__inner {
-    background-color: #3065af;
-    width: fit-content;
-    display: flex;
-    position: relative;
-    transform: translate3d(var(--move-initial), 0, 0);
-    animation: marquee 5s linear infinite;
-    animation-play-state: paused;
-}
+    .white {
+        font-family: 'NeueMontreal-Bold';
+        font-size: 2.5rem;
+        color: white;
+        margin-top: 0.5rem;
+    }
 
-.marquee span {
-    font-size: 1.7rem;
-    padding: 0 1vw;
-    margin-bottom: 0.1rem;
-    margin-top: 0.25rem;
-}
+    .white_2 {
+        font-family: 'NeueMontreal-Regular';
+        font-size: 1.3rem;
+        color: white;
+        margin-bottom: 2rem;
+    }
 
-.marquee .marquee__inner {
-    animation-play-state: running;
-}
+    .white_3 {
+        font-family: 'NeueMontreal-Bold';
+        font-size: 1.5rem;
+        color: white;
+    }
 
-.white_4{
-    color: #fff;
-}
+    .copy_2 {
+        font-family: 'NeueMontreal-Regular';
+        font-size: 1.2rem;
+        color: white;
+        margin-top: 1.3rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .blu {
+        font-family: 'NeueMontreal-Regular';
+        font-size: 1.5rem;
+        color: #3065af;
+        opacity: 50%;
+        margin-top: 0.5rem;
+    }
+
+    .blu_1 {
+        font-family: 'NeueMontreal-Bold';
+        font-size: 2.5rem;
+        color: #3065af;
+        margin-top: 0.5rem;
+    }
+
+    .blu_2 {
+        font-family: 'NeueMontreal-Regular';
+        color: #3065af;
+        font-size: 1.3rem;
+        color: 3065af;
+    }
+
+    .blu_3 {
+        font-family: 'NeueMontreal-Bold';
+        font-size: 1.5rem;
+        color: #3065af;
+    }
+
+    .px-lg-5 {
+        padding-right: 11rem !important;
+        padding-left: 11rem !important;
+    }
+
+    .py-lg-5 {
+        padding-top: 4rem !important;
+        padding-bottom: 0rem !important;
+    }
+
+    /* barra che si muove */
+
+    .marquee {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        --offset: 20vw;
+        --move-initial: calc(-25% + var(--offset));
+        --move-final: calc(-50% + var(--offset));
+        font-family: 'EditorialNew-Ultrabold';
+        color: #fff;
+    }
+
+    .marquee__inner {
+        background-color: #3065af;
+        width: fit-content;
+        display: flex;
+        position: relative;
+        transform: translate3d(var(--move-initial), 0, 0);
+        animation: marquee 5s linear infinite;
+        animation-play-state: paused;
+    }
+
+    .marquee span {
+        font-size: 1.7rem;
+        padding: 0 1vw;
+        margin-bottom: 0.1rem;
+        margin-top: 0.25rem;
+    }
+
+    .marquee .marquee__inner {
+        animation-play-state: running;
+    }
+
+    .white_4 {
+        color: #fff;
+    }
 
 }
 
 
 /* XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) { 
+@media (min-width: 1400px) {
 
-        h4 {
-            font-family: 'NeueMontreal-Regular' ;
-            font-size: 3.75rem;
-            color:#3065af;
-            margin-top: 5rem;
-        }
+    h4 {
+        font-family: 'NeueMontreal-Regular';
+        font-size: 3.75rem;
+        color: #3065af;
+        margin-top: 5rem;
+    }
 
-        .color-size {
-            font-family: 'NeueMontreal-Bold';
-            font-size: 2rem;
-            color:#3065af;
-        } 
+    .color-size {
+        font-family: 'NeueMontreal-Bold';
+        font-size: 2rem;
+        color: #3065af;
+    }
 
-        .padding_right{
-            padding-right: 6.1rem;
-        }
+    .padding_right {
+        padding-right: 6.1rem;
+    }
 
 
 }
