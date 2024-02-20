@@ -96,7 +96,7 @@ html {
     display: flex;
     font-family: 'Mondwest-Bold';
     font-size: 1.21rem;
-    color:#D10E32;
+    color:#3065af;
 }
 
 ol, ul {
@@ -126,9 +126,12 @@ ol, ul {
     display: flex;
     font-family: 'Mondwest-Bold';
     font-size: 1.21rem;
-    color:#D10E32;
+    color:#3065af;
 }
 
+.red{
+    color: #D10E32;
+}
 
 /* Stili di testo */
 
@@ -257,6 +260,43 @@ a{
     font-size: 1rem;
     color: white;
 }
+
+
+#contacts_1 {
+    background-color: #ffffff;
+    margin-top: 4rem;
+}
+
+.blu {
+    font-family: 'NeueMontreal-Regular' ;
+    font-size: 1rem;
+    color:#3065af;
+    opacity: 50%;
+    margin-top: 0.5rem;
+}
+
+.blu_1 {
+    font-family: 'NeueMontreal-Bold' ;
+    font-size: 2.1875rem;
+    color: #3065af;
+    margin-top: 0.5rem;
+}
+
+.blu_2{
+    font-family: 'NeueMontreal-Regular' ;
+    color: #3065af;
+    font-size: 1rem;
+    color: 3065af;
+}
+.blu_3{
+    font-family: 'NeueMontreal-Bold' ;
+    font-size: 1rem;
+    color: #3065af;
+}
+
+
+
+
 .copy_2{
     font-family: 'NeueMontreal-Regular' ;
     font-size: 1rem;
@@ -269,7 +309,7 @@ a{
 
 .marquee {
     position: fixed;
-    top:40rem;
+    bottom: 0;
     --offset: 20vw;
     --move-initial: calc(-25% + var(--offset));
     --move-final: calc(-50% + var(--offset));
@@ -309,9 +349,15 @@ a{
 }
 
 
-/* immagine */
+/* sfondo blu */
 
+.white_4{
+    color: #fff;
+}
 
+ #progetto{
+    background-color: #3065af;
+} 
 
 
 
@@ -422,7 +468,7 @@ a{
         display: flex;
         font-family: 'Mondwest-Bold';
         font-size: 2.27rem;
-        color:#D10E32;
+        color:#3065af;
     }
     
     ol, ul {
@@ -438,7 +484,7 @@ a{
     
         display: flex;
         position: fixed;
-        top:30rem;
+        top:31rem;
         flex-direction: column;
         text-decoration: none;
         justify-content: space-between;
@@ -459,7 +505,11 @@ a{
         display: flex;
         font-family: 'Mondwest-Bold';
         font-size: 2.27rem;
-        color:#D10E32;
+        color:#3065af;
+    }
+
+    .red{
+        color: #D10E32;
     }
 
    /* Stili di testo */ 
@@ -595,7 +645,7 @@ p {
 
 .marquee {
     position: fixed;
-    top: 53.5rem;
+    bottom: 0;
     width: 100%;
     --offset: 20vw;
     --move-initial: calc(-25% + var(--offset));
@@ -623,6 +673,10 @@ p {
 
 .marquee .marquee__inner {
     animation-play-state: running;
+}
+
+.white_4{
+    color: #fff;
 }
 
 }
