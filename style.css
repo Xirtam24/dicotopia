@@ -215,6 +215,7 @@ p {
     display: flex;
     flex-wrap: wrap;
     margin-top: -1.5rem;
+    align-items: baseline;
 }
 
 .lista_2 {
