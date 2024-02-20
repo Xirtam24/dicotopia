@@ -419,7 +419,7 @@ a{
         flex-direction: row;
         position: fixed;
         justify-content: space-between;
-       background-color: #fff;
+        background-color: #fff;
         box-shadow: none;
         z-index: 3;
         font-size: 2rem;
@@ -432,6 +432,11 @@ a{
         color: #3065af;
         padding-left: 74px;
         padding-right: 82px;
+        transition: all .15s ease-in-out;
+    }
+
+    .nav-link:hover{
+        color: #D10E32;
     }
 
     .color-size {
@@ -608,6 +613,7 @@ p {
     display: flex;
     flex-wrap: wrap;
     margin-top: -5.5rem;
+    align-items: baseline;
 }
 .lista_2 {
     text-align: right;
