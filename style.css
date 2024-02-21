@@ -482,7 +482,7 @@ a {
 
     .bias-item {
         display: flex;
-        margin-top: 3rem;
+        margin-top: 1.5rem;
     }
 
     .bias-link {
@@ -506,7 +506,7 @@ a {
 
         display: flex;
         position: fixed;
-        top: 31rem;
+        top: 25.5rem;
         flex-direction: column;
         text-decoration: none;
         justify-content: space-between;
@@ -519,7 +519,7 @@ a {
 
     .cognitivi-item {
         display: flex;
-        margin-top: 3rem;
+        margin-top: 1.5rem;
         padding-top: -1.5rem;
     }
 
