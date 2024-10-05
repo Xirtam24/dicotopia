@@ -1,0 +1,946 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  background: #fff
+}
+
+@font-face {
+  font-family: 'NeueBit-Bold';
+  src: local('NeueBit-Bold'), url(font/NeueBit-Bold.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: 'NeueBit-Regular';
+  src: local('NeueBit-Regular'), url(font/NeueBit-Regular.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: 'NeueMontreal-Bold';
+  src: local('NeueMontreal-Bold'), url(font/NeueMontreal-Bold.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: 'NeueMontreal-Regular';
+  src: local('NeueMontreal-Regular'), url(font/NeueMontreal-Regular.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: 'NeueMontreal-Light';
+  src: local('NeueMontreal-Light'), url(font/NeueMontreal-Regular.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: 'Gt-regular';
+  src: local('Gt-regular'), url(font/GT-Super-Display-Regular.ttf) format('ttf');
+}
+
+
+
+/* navbar */
+.bg-body-tertiary {
+  --bs-bg-opacity: 1;
+  background-color: rgb(255, 255, 255) !important;
+}
+
+   /* Stili per il video del logo */
+.navbar-brand video {
+  width: 105px;
+  height: 40px;
+  object-fit: cover;
+  display: block;
+}
+/* Nasconde i controlli del video */
+.navbar-brand video::-webkit-media-controls {
+  display: none !important;
+}
+/* Impedisce che il video venga mostrato a schermo intero al click */
+.navbar-brand video:focus {
+  outline: none;
+}
+.nav-item, .navbar-text{
+  font-family:'NeueMontreal-Regular' ;
+  font-size: 1rem;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  outline: none;
+  box-shadow: none;
+}
+
+.navbar-text {
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  color: #000000;
+  text-decoration: none;
+}
+/* frase */
+.frase {
+  margin-top: 13rem;
+  line-height: 1; /* Imposta l'interlinea a 1.5 volte l'altezza del font */
+  text-align: center;
+  font-family: 'NeueMontreal-Regular';
+  font-size: 1.5rem;
+}
+.pixel_1{
+  font-family:'NeueBit-Bold';
+  font-size: 2.2rem;
+  color: #8E4CCF;
+}
+.pixel_2{
+  font-family:'NeueBit-Bold';
+  font-size: 2.2rem;
+  color: #F34E1A;
+}
+.pixel_3{
+  font-family:'NeueBit-Bold';
+  font-size: 2.2rem;
+  color: #2970db;
+}
+.pixel_4{
+  font-family:'NeueBit-Bold';
+  font-size: 2.2rem;
+  color: #35a740;
+}
+
+.pixel_5{
+  font-family:'NeueBit-Bold';
+  font-size: 2.2rem;
+  color: #040404;
+}
+
+/* Tasto scroll */
+.scroll {
+  margin-top: 13rem;
+  text-align: right;
+
+}
+
+.scroll_1{
+  text-decoration: none;
+  font-family: 'NeueMontreal-Regular';
+  font-size: 1rem;
+  color: black;
+  align-items: right;
+}
+.scroll_1 .bi-arrow-down {
+  margin-left: 8px; /* Spazio tra il testo e l'icona */
+  transition: transform 0.3s;
+}
+.scroll_1:hover .bi-arrow-down {
+  transform: translateY(5px); /* Effetto di movimento al passaggio del mouse */
+}
+
+/* Stili di testo */
+h1{
+  font-family: 'NeueMontreal-Regular';
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 2.2rem !important;  /* Imposta la dimensione del font a 2rem */
+  font-family: 'NeueBit-Bold';
+}
+
+h3{
+  font-family: 'NeueMontreal-Light';
+  font-size: 1rem !important ;
+  margin-top: -1rem;
+}
+p{
+  font-family: 'NeueMontreal-Regular';
+  font-size: 1rem;
+}
+
+h4{
+    font-family: 'NeueMontreal-Regular';
+    font-size: 1rem !important;
+}
+
+/* Tasto scopri */
+.scopri {
+  text-align: right;
+} 
+.scopri_1{
+  font-family: 'NeueMontreal-Regular';
+  font-size: 1rem;
+  color: black;
+  align-items: right;
+}
+.scopri_1 .bi-arrow-down {
+  margin-left: 8px; /* Spazio tra il testo e l'icona */
+  transition: transform 0.3s;
+}
+.scopri_1:hover .bi-arrow-down {
+  transform: translateY(5px); /* Effetto di movimento al passaggio del mouse */
+}
+
+/* Aggiungi ulteriori stili per gestire l'immagine con testo sopra */
+.image-container {
+  position: relative;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+.image-text {
+  position: absolute;
+}
+
+/* Esempio di card con testo sovrapposto */
+.card-img-overlay-custom {
+  background: rgba(101, 31, 31, 0.5); /* Sfondo semi-trasparente */
+  color: white;
+}
+
+.numeri_bit_blu {
+  font-family: 'NeueBit-Bold';
+  font-size: 3.5625rem;
+  color: #2970DB;
+}
+.numeri_neue_blu {
+  font-family: 'NeueMontreal-Bold';
+  font-size: 2.5rem;
+  color: #2970DB;
+}
+  .numeri_bit_orange {
+    font-family: 'NeueBit-Bold';
+    font-size: 3.5625rem;
+    color: #F34E1A;
+  }
+.numeri_neue_orange {
+    font-family: 'NeueMontreal-Bold';
+    font-size: 2.5rem;
+    color: #F34E1A;
+  }
+  .numeri_bit_viola {
+    font-family: 'NeueBit-Bold';
+    font-size: 3.5625rem;
+    color: #8E4CCF;
+  }
+.numeri_neue_viola {
+    font-family: 'NeueMontreal-Bold';
+    font-size: 2.5rem;
+    color: #8E4CCF;
+  }
+  .numeri_bit_verde {
+    font-family: 'NeueBit-Bold';
+    font-size: 3.5625rem;
+    color: #36A741;
+  }
+.numeri_neue_verde {
+    font-family: 'NeueMontreal-Bold';
+    font-size: 2.5rem;
+    color: #36A741;
+  }
+
+  .custom-row {
+    margin-bottom: -1.4rem; /* Regola questo valore a tuo piacimento */
+  }
+
+  /* Personalizzazione delle Card */
+  .card {
+    border: none; /* Rimuove il bordo della card */
+    border-radius: 0; /* Rimuove gli angoli arrotondati */
+    box-shadow: none; /* Opzionale: Rimuove l'ombra */
+  }
+
+  /* Stili per le immagini all'interno delle card */
+  .card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Mantiene le proporzioni e riempie l'immagine */
+    border-radius: 0; /* Rimuove gli angoli arrotondati dall'immagine */
+  }
+
+  /* Stili per il testo della card */
+  .card-body {
+    padding: 10px 0; /* Riduce il padding per un aspetto più compatto */
+  }
+
+  .card-text {
+    font-family: 'NeueMontreal-Regular';
+    font-size: 1rem;
+    margin-bottom: 0; /* Rimuove il margine inferiore del testo */
+    color: #555; /* Colore della descrizione */
+  }
+
+  .card-title {
+    font-family: 'NeueMontreal-Regular';
+    font-size: 1.25rem;
+    color: #333; /* Colore del titolo */
+  }
+
+  /* Margine inferiore per gestire lo spazio tra le righe */
+  .mb-4 {
+    margin-bottom: 1.5rem !important;
+  }
+
+  /* Rimuovere bordi arrotondati e outline dalle card */
+  .card {
+    border: none;
+    border-radius: 0;
+    background: transparent;
+  }
+
+  /* Stili per le informazioni di contatto */
+  .contact-info a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .contact-info a:hover {
+    text-decoration: underline;
+  }
+
+
+
+ /* mappa  */
+  .mappa_pagina{
+    margin-top: 10rem;
+    margin-bottom:10rem ;
+  }
+
+
+ /* lista a due  */
+ .main-container {
+  height: 600px !important;
+  display: flex;
+  flex-direction: row;
+}
+/* Colonna Sinistra: Lista dei Gruppi */
+.group-list {
+  width: 30%; /* 30% della larghezza del container */
+  background-color: #ffffff;
+  /* Rimuove il bordo */
+  border-right: none;
+  overflow: hidden; /* Nasconde lo scroll iniziale */
+  height: 100vh; /* Occupa tutta l'altezza */
+  display: flex;
+  flex-direction: column;
+}
+/* Lista dei Gruppi */
+.group-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+/* Elementi della Lista dei Gruppi */
+.group-list {
+  width: 70% !important;
+  border-right: 1px solid #ffffff;
+  overflow: hidden;
+  position: relative;
+}
+.group-list li {
+  padding: 15px 20px;
+  cursor: pointer;
+  background-color: #ffffff;
+  border-right: 1px solid #ffffff;
+  /* Rimuove il bordo */
+  border-bottom: none;
+  font-family: 'NeueMontreal-Bold'!important;
+  font-size: 5rem;
+}
+/* Evidenziazione del Gruppo Attivo */
+.group-list li.active {
+  background-color: #0d6efd;
+  color: white;
+}
+/* Colonna Destra: Lista degli Elementi */
+.element-list {
+  width: 70%; /* 70% della larghezza del container */
+  padding: 20px;
+  overflow-y: auto; /* Abilita lo scroll verticale */
+  position: relative;
+  font-family: 'NeueBit-Regular';
+}
+/* Stile per le Sezioni dei Gruppi nella Lista degli Elementi */
+.group-section {
+  margin-bottom: 40px;
+}
+.group-section h5 {
+  margin-bottom: 15px;
+  border-bottom: 2px solid #0d6efd;
+  padding-bottom: 5px;
+  font-size: 1.3rem;
+  color: #0d6efd;
+}
+/* Rimuove i bordi dalle liste */
+.list-group-item {
+  border: none;
+  padding: 10px 15px;
+  font-size: 5.25rem;
+  font-family: 'NeueBit-Regular';
+}
+/* Stile per i link nella lista degli elementi */
+.list-group-item a {
+  text-decoration: none;
+  color: #0d6efd;
+}
+.list-group-item a:hover {
+  text-decoration: underline;
+  color: #084298;
+}
+
+
+
+
+  /* Stili per il footer */
+  .footer {
+    position: relative;
+    height: 40vh;
+    background: #333;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 80px; /* Spazio per l'SVG */
+    text-align: left;
+    overflow: hidden; /* Nasconde l'eventuale parte dell'SVG fuori dal footer */
+    animation: colorCycle 20s infinite; /* Animazione dello sfondo */
+}
+
+/* Animazione dello sfondo del footer */
+@keyframes colorCycle {
+    0% { background-color: #F34E1A; }    /* Rosso arancio */
+    25% { background-color: #2970DB; }   /* Blu */
+    50% { background-color: #36A741; }   /* Verde */
+    75% { background-color: #8E4CCF; }   /* Rosa */
+    100% { background-color: #020202; }  /* Torna al rosso arancio */
+}
+
+.footer-content {
+    z-index: 1; /* Porta il contenuto sopra l'SVG */
+    position: relative;
+}
+
+.footer-svg-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40%; /* Mostra solo la parte superiore */
+    overflow: hidden; /* Nasconde la parte inferiore dell'SVG */
+}
+
+.footer-svg-container img {
+    width: 100%;
+    height: auto;
+}
+
+.footer-contact a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-contact a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* PAGINA BIAS */
+
+.link-custom_1 {
+  background: none;
+  border: none;
+  padding: 0;
+  color: #000000; /* Colore del testo */
+  cursor: pointer;
+  font-family: 'NeueMontreal-Regular';
+  font-size: 1rem;
+}
+.link-custom_1:hover {
+  text-decoration: underline;
+  font-family: 'NeueMontreal-Bold';
+  color: #8E4CCF; /* Colore al passaggio del mouse */
+}
+.link-custom_2 {
+  background: none;
+  border: none;
+  padding: 0;
+  color: #000000; /* Colore del testo */
+  cursor: pointer;
+  font-family: 'NeueMontreal-Regular';
+  font-size: 1rem;
+}
+.link-custom_2:hover {
+  text-decoration: underline;
+  font-family: 'NeueMontreal-Bold';
+  color: #35A740; /* Colore al passaggio del mouse */
+}
+.link-custom_3 {
+  background: none;
+  border: none;
+  padding: 0;
+  color: #000000; /* Colore del testo */
+  cursor: pointer;
+  font-family: 'NeueMontreal-Regular';
+  font-size: 1rem;
+}
+.link-custom_3:hover {
+  text-decoration: underline;
+  font-family: 'NeueMontreal-Bold';
+  color: #F34E1A; /* Colore al passaggio del mouse */
+}
+.link-custom_4 {
+  background: none;
+  border: none;
+  padding: 0;
+  color: #000000; /* Colore del testo */
+  cursor: pointer;
+  font-family: 'NeueMontreal-Regular';
+  font-size: 1rem;
+}
+.link-custom_4:hover {
+  text-decoration: underline;
+  font-family: 'NeueMontreal-Bold';
+  color: #2970DB; /* Colore al passaggio del mouse */
+}
+/* Allineamento a destra */
+.links-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px; /* Spazio tra i link e le icone */
+}
+/* Stile per le icone */
+.filter-icons img {
+  width: 24px; /* Dimensione delle icone */
+  height: 24px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+.filter-icons img:hover {
+  opacity: 0.7; /* Effetto al passaggio del mouse */
+}
+
+
+
+/* Stile per le carte */
+.custom-card {
+  background-color: #ffffff; /* Colore di sfondo della carta */
+  border: none; /* Rimuove il bordo predefinito */
+  border-radius: 10px; /* Arrotonda gli angoli */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Aggiunge un'ombra */
+  padding: 20px; /* Padding interno */
+  transition: transform 0.2s; /* Effetto hover */
+  height: 100%; /* Per allineare le carte di altezza uguale */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.custom-card:hover {
+  transform: translateY(-5px); /* Solleva la carta al passaggio del mouse */
+}
+.card-title-main {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #343a40;
+}
+.card-subtitle {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #495057;
+  margin-bottom: 0; /* Rimuove il margine inferiore per allineare con l'immagine */
+}
+.card-description {
+  font-size: 1rem;
+  color: #6c757d;
+  margin-top: 15px;
+  flex-grow: 1; /* Permette alla descrizione di espandersi */
+}
+.read-more {
+  font-size: 0.9rem;
+  color: #0d6efd;
+  text-decoration: none;
+}
+.read-more:hover {
+  text-decoration: underline;
+  color: #0a58ca;
+}
+.card-img-left {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+@media (max-width: 576px) {
+  .card-img-left {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+
+/* Stili personalizzati approfondimento */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-top: 25rem;
+  height: 100vh;
+  overflow-y: auto;
+  padding-top: 60px;
+  background-color: #fff;
+  width: 250px;
+}
+
+.content {
+  margin-left: 250px;
+  padding: 20px;
+}
+
+.gt-frase{
+  margin-top: 3rem;
+  margin-bottom: 7rem;
+  align-items: center;
+  font-family: 'Gt-regular';
+  font-size: 1.7rem;
+
+}
+
+.grigio_1 {
+  margin-top: 4rem;
+  font-family: 'NeueMontreal-Regular';
+  font-size: 1.3rem;
+  color: #8E4CCF;
+ 
+}
+
+.sottotitolo_1 {
+  font-family: 'NeueMontreal-Light';
+  font-size: 1rem;
+  color: #000000;
+}
+
+.bias_approfondimento{
+font-family:'NeueBit-Bold' ;
+font-size: 1.7rem;
+}
+
+.spiegazione{
+  font-family: 'NeueMontreal-Light';
+  font-size: 1rem;
+}
+
+.gt-titoli{
+  font-family: 'Gt-regular';
+  font-size: 1.5rem;
+}
+
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #8E4CCF;
+  --bs-btn-border-color: #8E4CCF;
+}
+
+.btn-primary_3 {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #36A741;
+  --bs-btn-border-color: #36A741;
+}
+
+.btn-primary_4 {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #F34E1A;
+  --bs-btn-border-color: #F34E1A;
+}
+
+.btn-primary_2 {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #2970DB;
+  --bs-btn-border-color: #2970DB;
+}
+
+.grigio_2{
+  margin-top: 4rem;
+  font-family: 'NeueMontreal-Regular';
+  font-size: 1.3rem;
+  color: #2970DB;
+}
+
+.grigio_3{
+  margin-top: 4rem;
+  font-family: 'NeueMontreal-Regular';
+  font-size: 1.3rem;
+  color: #36A741;
+}
+
+.grigio_4{
+  margin-top: 4rem;
+  font-family: 'NeueMontreal-Regular';
+  font-size: 1.3rem;
+  color: #F34E1A;
+}
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+
+  .dropdown-menu-fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1030; /* Assicurati che sia sopra altri elementi */
+  }
+
+  .dropdown-toggle-custom {
+    width: 100%;
+    text-align: center;
+    border-radius: 0;
+  }
+
+  .content {
+    margin-left: 0;
+  }
+
+  .scroll-indicator {
+    position: fixed;
+    bottom: 38px; /* Sopra il menu a tendina */
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #e9ecef;
+    overflow: hidden;
+  }
+
+  .scroll-indicator-bar {
+    height: 100%;
+    background-color: #a5a1a8;
+    width: 0%;
+    transition: width 0.3s;
+  }
+
+  
+
+}
+
+.active-item {
+  font-family: 'Gt-regular';
+  font-weight: bold;
+  color: #8E4CCF;
+}
+
+.nav-link {
+  color: #030303; }
+
+
+
+
+
+
+  /* media query (text) */
+@media (min-width: 380px) {}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {}
+
+@media (max-width: 768px) {}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+
+    .navbar-nav {
+        flex-direction: row;
+        align-items: center;
+      }
+  
+      .navbar-nav .nav-item {
+        margin-left: 15px;
+        margin-right: 15px;
+      }
+  
+      .navbar-nav .nav-item:last-child {
+        margin-left: auto;
+      }
+
+      .nav-item, .navbar-text{
+        font-family:'NeueMontreal-Regular' ;
+        font-size: 1.25rem;
+    }
+      .frase{
+        margin-top: 13rem;
+      }
+      .pixel_1{
+        font-family:'NeueBit-Bold';
+        font-size: 5.4rem;
+        color: #8E4CCF;
+    }
+      .pixel_2{
+        font-family:'NeueBit-Bold';
+        font-size: 5.4rem;
+        color: #F34E1A;
+    }
+      .pixel_3{
+        font-family:'NeueBit-Bold';
+        font-size: 5.4rem;
+        color: #2970db;
+    }
+      .pixel_4{
+        font-family:'NeueBit-Bold';
+        font-size: 5.4rem;
+        color: #35a740;
+    }
+
+    .pixel_5{
+      font-family:'NeueBit-Bold';
+      font-size: 5.4rem;
+      color: #040404;
+    }
+
+    .scroll_1{
+        font-size: 1.25rem;
+    }
+
+    .scopri_1{
+      font-size: 1.25rem;
+  }
+
+    .frase {
+      font-size: 4rem;
+    }
+
+    h1{
+      font-family: 'NeueMontreal-Regular';
+      font-size: 4rem;
+    }
+
+    h2 {
+      font-size: 5.25rem !important;  /* Imposta la dimensione del font a 2rem */
+      font-family: 'NeueBit-Bold';
+    }
+    
+    h3{
+      font-family: 'NeueMontreal-Light';
+      font-size: 1.5rem !important ;
+      margin-top: -1.5rem;
+    }
+    p{
+      font-family: 'NeueMontreal-Regular';
+      font-size: 1.5rem;
+    }
+
+    .image-text {
+      position: absolute;
+      top: 80%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      /* Altri stili per il testo */
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+
+   .numeri_bit_blu, .numeri_bit_orange, .numeri_bit_verde, .numeri_bit_viola {
+      font-size: 11rem;
+  }
+
+  .numeri_neue_verde, .numeri_neue_blu, .numeri_neue_orange, .numeri_neue_viola {
+      font-size: 8.5rem;
+  }
+ 
+  .custom-row {
+    margin-bottom: -5rem; /* Regola questo valore a tuo piacimento */
+  }
+
+  .card-img-top {
+    height: 250px;
+  }
+
+  .card-text {
+    font-family: 'NeueMontreal-Regular';
+    font-size: 1rem;
+    margin-bottom: 0; /* Rimuove il margine inferiore del testo */
+    color: #555; /* Colore della descrizione */
+  }
+
+  .card-title {
+    font-family: 'NeueMontreal-Regular';
+    font-size: 1.6rem;
+    color: #333; /* Colore del titolo */
+  }
+
+
+  .gt-frase{
+    margin-top: 5rem;
+    margin-bottom: 7rem;
+    font-family: 'Gt-regular';
+    font-size: 3rem;
+    line-height: 1; /* Puoi modificare il valore secondo le tue esigenze */
+  
+  }
+  
+  .grigio_1 {
+    margin-top: 4rem;
+    font-family: 'NeueMontreal-Regular';
+    font-size: 4rem;
+    color: #8E4CCF;
+   
+  }
+  
+  .sottotitolo_1 {
+    font-family: 'NeueMontreal-Light';
+    font-size: 1.5rem;
+    color: #000000;
+  }
+
+  .bias_approfondimento{
+    font-family:'NeueBit-Bold' ;
+    font-size: 2.75rem;
+    }
+    
+    .spiegazione{
+      font-family: 'NeueMontreal-Light';
+      font-size: 1.5rem;
+    }
+
+    .grigio_2{
+      margin-top: 4rem;
+      font-family: 'NeueMontreal-Regular';
+      font-size: 4rem;
+      color: #2970DB;
+    }
+
+    .grigio_3{
+      margin-top: 4rem;
+      font-family: 'NeueMontreal-Regular';
+      font-size: 4rem;
+      color: #36A741;
+    }
+    
+    .grigio_4{
+      margin-top: 4rem;
+      font-family: 'NeueMontreal-Regular';
+      font-size: 4rem;
+      color: #F34E1A;
+    }
+
+
+
+    /* Logo SVG */
+    .footer {
+      padding-bottom: 100px;
+  }
+  .footer-svg-container {
+      height: 50%; /* Mostra una parte maggiore dell'SVG su schermi piccoli */
+  }
+  
+
+
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1400px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+      max-width: 1400px !important;
+  }
+}
