@@ -8,32 +8,32 @@ body {
 
 @font-face {
   font-family: 'NeueBit-Bold';
-  src: local('NeueBit-Bold'), url(font/NeueBit-Bold.ttf) format('ttf');
+  src: url(font/NeueBit-Bold.ttf) format('ttf');
 }
 
 @font-face {
   font-family: 'NeueBit-Regular';
-  src: local('NeueBit-Regular'), url(font/NeueBit-Regular.ttf) format('ttf');
+  src: url(font/NeueBit-Regular.ttf) format('ttf');
 }
 
 @font-face {
   font-family: 'NeueMontreal-Bold';
-  src: local('NeueMontreal-Bold'), url(font/NeueMontreal-Bold.ttf) format('ttf');
+  src: url(font/NeueMontreal-Bold.ttf) format('ttf');
 }
 
 @font-face {
   font-family: 'NeueMontreal-Regular';
-  src: local('NeueMontreal-Regular'), url(font/NeueMontreal-Regular.ttf) format('ttf');
+  src: url(font/NeueMontreal-Regular.ttf) format('ttf');
 }
 
 @font-face {
   font-family: 'NeueMontreal-Light';
-  src: local('NeueMontreal-Light'), url(font/NeueMontreal-Regular.ttf) format('ttf');
+  src: url(font/NeueMontreal-Regular.ttf) format('ttf');
 }
 
 @font-face {
   font-family: 'Gt-regular';
-  src: local('Gt-regular'), url(font/GT-Super-Display-Regular.ttf) format('ttf');
+  src: url(font/GT-Super-Display-Regular.ttf) format('ttf');
 }
 
 
