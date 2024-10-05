@@ -8,27 +8,27 @@ body {
 
 @font-face {
   font-family: 'NeueBit-Bold';
-  src: url(font/NeueBit-Bold.ttf) format('ttf');
+  src: url(font/NeueBit-Bold.woff) format('woff');
 }
 
 @font-face {
   font-family: 'NeueBit-Regular';
-  src: url(font/NeueBit-Regular.ttf) format('ttf');
+  src: url(font/NeueBit-Regular.woff) format('woff');
 }
 
 @font-face {
   font-family: 'NeueMontreal-Bold';
-  src: url(font/NeueMontreal-Bold.ttf) format('ttf');
+  src: url(font/NeueMontreal-Bold.woff) format('woff');
 }
 
 @font-face {
   font-family: 'NeueMontreal-Regular';
-  src: url(font/NeueMontreal-Regular.ttf) format('ttf');
+  src: url(font/NeueMontreal-Regular.woff) format('woff');
 }
 
 @font-face {
   font-family: 'NeueMontreal-Light';
-  src: url(font/NeueMontreal-Regular.ttf) format('ttf');
+  src: url(font/NeueMontreal-Regular.woff) format('woff');
 }
 
 @font-face {
